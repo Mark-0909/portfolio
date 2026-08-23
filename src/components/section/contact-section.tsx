@@ -26,7 +26,9 @@ export default function ContactSection() {
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
           Want to connect or discuss an opportunity? Send me an{" "}
           <Link
-            href={`mailto:${DATA.contact.email}`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${DATA.contact.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
             email directly
