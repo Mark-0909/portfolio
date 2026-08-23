@@ -6,12 +6,87 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import ContactSection from "@/components/section/contact-section";
-import HackathonsSection from "@/components/section/hackathons-section";
+import AchievementsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
+import { Icons } from "@/components/icons";
+import { Csharp } from "@/components/ui/svgs/csharp";
+import { Java } from "@/components/ui/svgs/java";
+import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { Python } from "@/components/ui/svgs/python";
+import { ReactLight } from "@/components/ui/svgs/reactLight";
+import { Typescript } from "@/components/ui/svgs/typescript";
+import {
+  SiCodeigniter,
+  SiDotnet,
+  SiFastapi,
+  SiGit,
+  SiMysql,
+  SiPhp,
+  SiPostman,
+  SiSqlite,
+  SiVite,
+} from "react-icons/si";
 
 const BLUR_FADE_DELAY = 0.04;
+
+function SkillLogo({ skill }: { skill: string }) {
+  const baseClass = "h-4 w-4 shrink-0";
+
+  const initials = skill
+    .split(/\s|[()&/.-]/)
+    .filter(Boolean)
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase() || "•";
+
+  const fallback = (tone: string) => (
+    <div
+      className={`flex h-4 w-4 items-center justify-center rounded-full text-[8px] font-semibold ring-1 ${tone}`}
+    >
+      {initials}
+    </div>
+  );
+
+  switch (skill) {
+    case "Python":
+      return <Python className={baseClass} />;
+    case "C#":
+      return <Csharp className={baseClass} />;
+    case "Java":
+      return <Java className={baseClass} />;
+    case "JavaScript":
+      return <Typescript className={baseClass} />;
+    case "React":
+      return <ReactLight className={baseClass} />;
+    case "PostgreSQL":
+      return <Postgresql className={baseClass} />;
+    case "FastAPI":
+      return <SiFastapi className={baseClass} color="#009485" />;
+    case "Vite":
+      return <SiVite className={baseClass} color="#646CFF" />;
+    case ".NET":
+      return <SiDotnet className={baseClass} color="#512BD4" />;
+    case "CodeIgniter":
+      return <SiCodeigniter className={baseClass} color="#EE4323" />;
+    case "SQLite":
+      return <SiSqlite className={baseClass} color="#003B57" />;
+    case "MySQL":
+      return <SiMysql className={baseClass} color="#4479A1" />;
+    case "PHP":
+      return <SiPhp className={baseClass} color="#777BB3" />;
+    case "Git":
+      return <SiGit className={baseClass} color="#F05032" />;
+    case "Postman":
+      return <SiPostman className={baseClass} color="#FF6C37" />;
+    case "GitHub":
+      return <Icons.github className={baseClass} />;
+    default:
+      return null;
+  }
+}
 
 export default function Page() {
   return (
@@ -27,7 +102,7 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                className="text-muted-foreground max-w-150 md:text-lg lg:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -118,14 +193,26 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-2">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
-                  {skill.icon && <skill.icon className="size-4 rounded overflow-hidden object-contain" />}
-                  <span className="text-foreground text-sm font-medium">{skill.name}</span>
+          <div className="flex flex-col gap-4">
+            {DATA.skills.map((skillGroup, groupIndex) => (
+              <div key={skillGroup.category} className="space-y-2.5">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.13em] text-muted-foreground/90">
+                  {skillGroup.category}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {skillGroup.items.map((skill, itemIndex) => (
+                    <BlurFade
+                      key={`${skillGroup.category}-${skill}`}
+                      delay={BLUR_FADE_DELAY * 10 + groupIndex * 0.05 + itemIndex * 0.02}
+                    >
+                      <div className="flex h-8 items-center gap-2.5 rounded-full border border-border/70 bg-muted/30 px-2.5 py-1.5 text-sm text-foreground shadow-sm transition-colors hover:border-border/90">
+                        <SkillLogo skill={skill} />
+                        <span className="font-medium leading-none">{skill}</span>
+                      </div>
+                    </BlurFade>
+                  ))}
                 </div>
-              </BlurFade>
+              </div>
             ))}
           </div>
         </div>
@@ -135,9 +222,9 @@ export default function Page() {
           <ProjectsSection />
         </BlurFade>
       </section>
-      <section id="hackathons">
+      <section id="achievements">
         <BlurFade delay={BLUR_FADE_DELAY * 13}>
-          <HackathonsSection />
+          <AchievementsSection />
         </BlurFade>
       </section>
       <section id="contact">
