@@ -8,9 +8,9 @@ export const DATA = {
   location: "Cavite, Philippines",
   locationLink: "https://www.google.com/maps/place/Cavite,+Philippines",
   description:
-    "Software Engineer & AI Developer. Specializing in NLP, multi-step LLM agentic pipelines, RESTful APIs, and full-stack systems.",
+    "Computer Science graduate focused on building scalable software, debugging complex systems, and delivering dependable technical solutions.",
   summary:
-    "Bachelor of Science in Computer Science graduate with hands-on experience architecting NLP pipelines, transformer-based claim verification systems, and production full-stack platforms. Experienced in Python, TypeScript, modern React/Next.js frameworks, SQL/relational databases, and building robust RESTful APIs with strict prompt guardrails.",
+    "Equipped with strong foundations in object-oriented programming, relational databases, system testing, and full-stack development. Proven track record across applied research, client software deployments, and cross-functional team environments.",
   avatarUrl: "/mark.jpg",
   skills: [
     {
