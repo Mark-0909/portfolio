@@ -33,8 +33,8 @@ export default function AchievementsSection() {
             <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
           </div>
 
-          <div className="flex flex-col gap-y-3 items-center justify-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Milestones & Recognition</h2>
+          <div className="flex w-full flex-col gap-y-3 items-center justify-center">
+            <h2 className="max-w-full text-center text-3xl font-bold tracking-tighter whitespace-normal sm:text-4xl">Milestones & Recognition</h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
               Research publications, symposium presentations, and production software deliveries throughout my technical journey.
             </p>
@@ -61,7 +61,7 @@ export default function AchievementsSection() {
                   )}
                 </div>
 
-                <h3 className="font-semibold text-base text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                <h3 className="font-semibold text-base text-foreground group-hover:text-primary transition-colors">
                   {achievement.title}
                 </h3>
 
