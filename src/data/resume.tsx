@@ -219,6 +219,11 @@ export const DATA = {
           href: "https://github.com/Mark-0909/Type-Wizard-Tower-Defense",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Itch.io",
+          href: "https://mark-orcullo.itch.io/type-wizard-tower-defense",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "tower.png",
       video: "",
