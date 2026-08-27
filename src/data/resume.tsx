@@ -200,6 +200,42 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Inday Room Rental Management",
+      href: "https://github.com/Mark-0909/inday-rental-frontend",
+      dates: "2026",
+      active: true,
+      description:
+        "A modern, intuitive web interface for the Inday Rental management system allowing landlords to easily manage rooms, track tenants, and generate/monitor utility and rent bills. Features dynamic billing and image uploads for proofs. Built primarily through AI-assisted development.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Java",
+        "Spring Boot",
+        "MySQL",
+      ],
+      links: [
+        {
+          type: "Frontend",
+          href: "https://github.com/Mark-0909/inday-rental-frontend",
+          icon: <Icons.github className="size-3" />,
+        },
+         {
+          type: "Backend",
+          href: "https://github.com/Mark-0909/inday-rental-backend",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://inday-rental-frontend.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "Rental.png",
+      video: "",
+    },
+    {
       title: "Type Wizard: Tower Defense",
       href: "https://github.com/Mark-0909/Type-Wizard-Tower-Defense",
       dates: "2024",
