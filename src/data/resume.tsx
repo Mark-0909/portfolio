@@ -127,6 +127,7 @@ export const DATA = {
       href: "https://github.com/true-scope",
       dates: "2025 - 2026",
       active: true,
+      category: "Web",
       description:
         "Architected an end-to-end multi-source claim verification system and browser extension leveraging transformer-based NLP and NLI classification models. Features automated tool calling, bias detection, and structured prompt evaluation guardrails.",
       technologies: [
@@ -154,6 +155,7 @@ export const DATA = {
       href: "https://github.com/Mark-0909/SmartPoultry",
       dates: "2024",
       active: true,
+      category: "Software",
       description:
         "Engineered an automated poultry management platform connecting IoT sensor nodes with a central web dashboard. Built real-time monitoring graphs, automated environmental alerting, and structured MySQL inventory management.",
       technologies: [
@@ -172,11 +174,12 @@ export const DATA = {
       image: "smartpoultry.png",
       video: "",
     },
-       {
+    {
       title: "Document Management System (DMS)",
       href: "https://github.com/Mark-0909/doc_tracking",
       dates: "2025",
       active: true,
+      category: "Web",
       description:
         "Architected a secure web-based document management platform for organizing, archiving, and retrieving digital records. Built role-based access control (RBAC), automated document tracking, and optimized SQL search queries.",
       technologies: [
@@ -185,9 +188,6 @@ export const DATA = {
         "MySQL",
         "RESTful APIs",
         "tailwindCSS",
-        "OOP Architecture",
-        "Game Physics & AI",
-        "State Machines",
       ],
       links: [
         {
@@ -204,6 +204,7 @@ export const DATA = {
       href: "https://github.com/Mark-0909/inday-rental-frontend",
       dates: "2026",
       active: true,
+      category: "Web",
       description:
         "A modern, intuitive web interface for the Inday Rental management system allowing landlords to easily manage rooms, track tenants, and generate/monitor utility and rent bills. Features dynamic billing and image uploads for proofs. Built primarily through AI-assisted development.",
       technologies: [
@@ -240,6 +241,7 @@ export const DATA = {
       href: "https://github.com/Mark-0909/Type-Wizard-Tower-Defense",
       dates: "2024",
       active: true,
+      category: "Game Dev",
       description:
         "Engineered an interactive typing-mechanic tower defense game. Built custom word-matching input systems, enemy pathfinding AI, wave progression controllers, and projectile combat interactions utilizing object-oriented programming patterns.",
       technologies: [
@@ -269,6 +271,7 @@ export const DATA = {
       href: "https://github.com/Mark-0909/Vectraze",
       dates: "2024",
       active: true,
+      category: "Software",
       description:
         "Developed a Windows desktop application that converts standard images into customizable pixel art. Implemented dynamic canvas resizing, rasterization algorithms, a direct pixel-editing toolkit, background isolation, and image filter effects.",
       technologies: [
@@ -293,6 +296,7 @@ export const DATA = {
       href: "https://dfa-simulator67.netlify.app/",
       dates: "2024",
       active: true,
+      category: "Web",
       description:
         "Built an interactive web simulator for Deterministic Finite Automata (DFA). Features a dynamic node-and-edge canvas editor, state machine configuration, self-loop transitions, and step-by-step input string execution.",
       technologies: [
