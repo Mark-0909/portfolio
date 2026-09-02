@@ -322,6 +322,36 @@ export const DATA = {
       image: "dfa.png",
       video: "",
     },
+    {
+      title: "Echo: Soul Saver",
+      href: "https://github.com/Mark-0909/Echo-Soul-Saver",
+      dates: "2024",
+      active: true,
+      category: "Game Dev",
+      description:
+        "Engineered a 2D rogue-like action-platformer featuring dynamic form-shifting mechanics between ghost and human states. Implemented life-draining transformation balance logic, monster combat AI, soul-gathering mechanics, and floor ascension progression.",
+      technologies: [
+        "Godot Engine",
+        "Godot Scripting Language (GDScript)",
+        "2D Pixel Art & Animation",
+        "Game Physics & Mechanics",
+        "Rogue-like Systems",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Mark-0909/Echo-Soul-Saver",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Itch.io",
+          href: "https://mark-orcullo.itch.io/echo-soul-saver",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "echo.png",
+      video: "",
+    },
   ],
 
 achievements: [
