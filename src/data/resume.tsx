@@ -27,7 +27,13 @@ export const DATA = {
     },
     {
       category: "Automation & Workflow",
-      items: ["LLMs (Claude/Gemini/OpenAI)", "REST API & Webhooks", "Web Scraping", "Prompt Engineering"],
+      items: ["n8n",
+"API Integration",
+"Automation Architectures",
+"LLMs (Claude/Gemini/OpenAI)",
+"Web Scraping",
+"Prompt Engineering",
+],
     },
     {
       category: "Testing & QA",
@@ -150,6 +156,31 @@ export const DATA = {
       image: "truescope.png",
       video: "",
     },
+    {
+  title: "Autonomous AI Job Hunter",
+  href: "https://github.com/Mark-0909/ai-automated-job-hunter",
+  dates: "October 2026",
+  active: true,
+  description:
+    "An automated, dual-persona job recruitment pipeline built with n8n. Scrapes live job boards daily, analyzes postings against multiple resumes simultaneously using Google Gemini AI, and automatically categorizes them into a tracking database with custom rate-limit handling.",
+  technologies: [
+    "n8n",
+    "Apify",
+    "Google Gemini API",
+    "Google Workspace APIs",
+    "Docker",
+    "Automated Web Scraping"
+  ],
+  links: [
+    {
+      type: "Source",
+      href: "https://github.com/Mark-0909/ai-automated-job-hunter.git",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "jobtracker.png",
+  video: "",
+},
     {
       title: "SmartPoultry IoT & Management System",
       href: "https://github.com/Mark-0909/SmartPoultry",
