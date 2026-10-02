@@ -8,7 +8,7 @@ import { DATA } from "@/data/resume";
 
 const BLUR_FADE_DELAY = 0.04;
 
-const CATEGORIES = ["All", "Web", "Software", "Game Dev"] as const;
+const CATEGORIES = ["All", "Web", "Software", "Game Dev", "Automation"] as const;
 type Category = (typeof CATEGORIES)[number];
 
 export default function ProjectsSection() {
