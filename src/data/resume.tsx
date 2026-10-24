@@ -8,48 +8,95 @@ export const DATA = {
   location: "Cavite, Philippines",
   locationLink: "https://www.google.com/maps/place/Cavite,+Philippines",
   description:
-    "Computer Science graduate focused on building scalable software, debugging complex systems, and delivering dependable technical solutions.",
+    "Computer Science graduate specializing in Software Development, Systems Reliability, and Workflow Automation. Building dependable applications, diagnosing complex system issues, and bridging technical development with operational support.",
+  headline:
+    "Computer Science graduate specializing in Software Development, Systems Reliability, and Workflow Automation.",
+  subheadline:
+    "Building dependable applications, diagnosing complex system issues, and bridging technical development with operational support.",
   summary:
-    "Equipped with strong foundations in object-oriented programming, relational databases, system testing, and full-stack development. Proven track record across applied research, client software deployments, and cross-functional team environments.",
+    "Computer Science graduate (BSCS) with practical experience spanning full-stack application development, automated workflow architecture, and enterprise technical support. Combines solid engineering fundamentals in object-oriented programming, relational databases, and API integration with hands-on diagnostic discipline and strict SLA compliance. Experienced in translating user requirements into scalable software and maintaining stable, secure operating environments across cross-functional teams.",
   avatarUrl: "/mark.jpg",
   skills: [
     {
-      category: "Programming Languages",
-      items: ["Python", "C#", "Java", "PHP", "JavaScript"],
+      domain: "Software Engineering & Web Development",
+      categories: [
+        {
+          name: "Languages",
+          items: ["Python", "C#", "Java", "PHP", "JavaScript", "SQL"],
+        },
+        {
+          name: "Frameworks & Libraries",
+          items: ["FastAPI", "React", "Vite", ".NET (WPF)", "CodeIgniter"],
+        },
+        {
+          name: "Databases & Architecture",
+          items: [
+            "PostgreSQL",
+            "MySQL",
+            "SQLite",
+            "Relational Schema Design",
+            "Data Normalization",
+          ],
+        },
+      ],
     },
     {
-      category: "Web Frameworks & Libraries",
-      items: ["FastAPI", "React", "Vite", ".NET", "CodeIgniter"],
+      domain: "Systems, Automation & QA",
+      categories: [
+        {
+          name: "Automation & Integration",
+          items: [
+            "n8n Workflows",
+            "Webhooks",
+            "RESTful APIs",
+            "LLM API Pipelines (Claude/Gemini/OpenAI)",
+          ],
+        },
+        {
+          name: "Testing & Quality Assurance",
+          items: [
+            "API Inspection (Postman)",
+            "Defect Triage",
+            "Edge-Case Testing",
+            "Test Automation (Playwright)",
+          ],
+        },
+        {
+          name: "Version Control & CI/CD",
+          items: ["Git", "GitHub", "GitHub Actions"],
+        },
+      ],
     },
     {
-      category: "Database & Data",
-      items: ["PostgreSQL", "MySQL", "SQLite", "Relational Data Modeling", "Schema Design"],
-    },
-    {
-      category: "Automation & Workflow",
-      items: ["n8n",
-"API Integration",
-"Automation Architectures",
-"LLMs (Claude/Gemini/OpenAI)",
-"Web Scraping",
-"Prompt Engineering",
-],
-    },
-    {
-      category: "Testing & QA",
-      items: ["Manual Testing", "API Testing", "Edge Case Testing", "Test Automation (Playwright)"],
-    },
-    {
-      category: "Other Technologies",
-      items: ["Browser Extensions", "RESTful API Development", "NLP Pipelines", "NLI Models"],
-    },
-    {
-      category: "Tools & Platforms",
-      items: ["Git", "GitHub", "GitHub Actions (CI/CD)", "Postman"],
-    },
-    {
-      category: "Areas of Expertise",
-      items: ["Full-Stack Development", "AI Integration", "Fact-Checking & Verification Platforms", "Data Normalization"],
+      domain: "Enterprise IT & Infrastructure",
+      categories: [
+        {
+          name: "Operating Systems & Directory",
+          items: [
+            "Windows 10/11",
+            "Active Directory (User Provisioning, RBAC basics)",
+            "Azure Fundamentals",
+          ],
+        },
+        {
+          name: "Networking & Diagnostics",
+          items: [
+            "TCP/IP",
+            "DNS",
+            "DHCP",
+            "CLI Diagnostics (ping, nslookup, tracert, ipconfig)",
+          ],
+        },
+        {
+          name: "ITSM & Service Operations",
+          items: [
+            "Incident & Service Request Management",
+            "ITIL 4 Concepts",
+            "SLA Adherence",
+            "Technical SOP Documentation",
+          ],
+        },
+      ],
     },
   ],
   navbar: [
