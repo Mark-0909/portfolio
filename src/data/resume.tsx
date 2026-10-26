@@ -171,7 +171,17 @@ export const DATA = {
       start: "2018",
       end: "2020",
     },
-    
+  ],
+
+  certifications: [
+    {
+      title: "Introduction to ITIL® V4",
+      issuer: "Simplilearn",
+      href: "https://drive.google.com/file/d/1-_299QQWfL48CmfWigeVbHS8FjchyJKb/view?usp=sharing",
+      logoUrl: "/itil.svg",
+      start: "2026",
+      end: "2026",
+    },
   ],
 
   projects: [

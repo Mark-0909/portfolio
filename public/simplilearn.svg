@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="sl_bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f97316" />
+      <stop offset="1" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="sl_glow" x1="0" y1="0" x2="0" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#sl_bg)" />
+  <rect width="128" height="128" rx="28" fill="url(#sl_glow)" />
+  <rect x="1.5" y="1.5" width="125" height="125" rx="26.5" stroke="#ffffff" stroke-opacity="0.3" stroke-width="3" />
+  
+  <!-- Simplilearn stylized geometry / S-curve -->
+  <path d="M78 36H52C44.268 36 38 42.268 38 50C38 57.732 44.268 64 52 64H76C83.732 64 90 70.268 90 78C90 85.732 83.732 92 76 92H48" stroke="#ffffff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="36" r="6" fill="#ffffff" />
+  <circle cx="46" cy="92" r="6" fill="#ffffff" />
+</svg>
