@@ -175,6 +175,14 @@ export const DATA = {
 
   certifications: [
     {
+      title: "Introduction to Cybersecurity",
+      issuer: "Cisco Networking Academy",
+      href: "https://drive.google.com/file/d/1pLGlDr1uSOvNUBa1hnyKO1JKDJ-9_cei/view?usp=sharing",
+      logoUrl: "/cisco.svg",
+      start: "2026",
+      end: "2026",
+    },
+    {
       title: "Introduction to ITIL® V4",
       issuer: "Simplilearn",
       href: "https://drive.google.com/file/d/1-_299QQWfL48CmfWigeVbHS8FjchyJKb/view?usp=sharing",
