@@ -19,6 +19,9 @@ export default function ProjectsSection() {
         return project.category === selectedCategory;
     });
 
+    const featuredProjects = DATA.projects.filter((p) => p.featured);
+    const secondaryProjects = DATA.projects.filter((p) => !p.featured);
+
     const getCategoryCount = (cat: Category) => {
         if (cat === "All") return DATA.projects.length;
         return DATA.projects.filter((p) => p.category === cat).length;
@@ -42,7 +45,7 @@ export default function ProjectsSection() {
                     <div className="flex flex-col gap-y-3 items-center justify-center">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Check out my latest work</h2>
                         <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-                            I&apos;ve worked on a variety of projects, from web applications and desktop software to game development. Here are a few of my favorites.
+                            Production-ready systems, full-stack applications, and automated workflows, followed by creative technical explorations.
                         </p>
                     </div>
                 </div>
@@ -88,26 +91,86 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-200 mx-auto auto-rows-fr">
-                    {filteredProjects.map((project, id) => (
-                        <BlurFade
-                            key={`${selectedCategory}-${project.title}`}
-                            delay={BLUR_FADE_DELAY * 4 + id * 0.05}
-                            className="h-full"
-                        >
-                            <ProjectCard
-                                href={project.href}
-                                title={project.title}
-                                description={project.description}
-                                dates={project.dates}
-                                tags={project.technologies}
-                                image={project.image}
-                                video={project.video}
-                                links={project.links}
-                            />
-                        </BlurFade>
-                    ))}
-                </div>
+                {selectedCategory === "All" ? (
+                    <div className="flex flex-col gap-y-10">
+                        {/* Primary / Flagship Projects */}
+                        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-200 mx-auto auto-rows-fr w-full">
+                            {featuredProjects.map((project, id) => (
+                                <BlurFade
+                                    key={`featured-${project.title}`}
+                                    delay={BLUR_FADE_DELAY * 4 + id * 0.05}
+                                    className="h-full"
+                                >
+                                    <ProjectCard
+                                        href={project.href}
+                                        title={project.title}
+                                        description={project.description}
+                                        dates={project.dates}
+                                        tags={project.technologies}
+                                        image={project.image}
+                                        video={project.video}
+                                        links={project.links}
+                                    />
+                                </BlurFade>
+                            ))}
+                        </div>
+
+                        {/* Secondary / Explorations Section */}
+                        {secondaryProjects.length > 0 && (
+                            <div className="flex flex-col gap-y-5 pt-4 max-w-200 mx-auto w-full border-t border-border/60">
+                                <div className="flex flex-col gap-y-1">
+                                    <h3 className="text-lg font-semibold tracking-tight text-foreground">
+                                        Explorations & Interactive Builds
+                                    </h3>
+                                    <p className="text-xs sm:text-sm text-muted-foreground">
+                                        Game development experiments, algorithmic tools, and creative side projects.
+                                    </p>
+                                </div>
+                                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 auto-rows-fr w-full">
+                                    {secondaryProjects.map((project, id) => (
+                                        <BlurFade
+                                            key={`secondary-${project.title}`}
+                                            delay={BLUR_FADE_DELAY * 4 + id * 0.05}
+                                            className="h-full"
+                                        >
+                                            <ProjectCard
+                                                href={project.href}
+                                                title={project.title}
+                                                description={project.description}
+                                                dates={project.dates}
+                                                tags={project.technologies}
+                                                image={project.image}
+                                                video={project.video}
+                                                links={project.links}
+                                            />
+                                        </BlurFade>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                ) : (
+                    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-200 mx-auto auto-rows-fr w-full">
+                        {filteredProjects.map((project, id) => (
+                            <BlurFade
+                                key={`${selectedCategory}-${project.title}`}
+                                delay={BLUR_FADE_DELAY * 4 + id * 0.05}
+                                className="h-full"
+                            >
+                                <ProjectCard
+                                    href={project.href}
+                                    title={project.title}
+                                    description={project.description}
+                                    dates={project.dates}
+                                    tags={project.technologies}
+                                    image={project.image}
+                                    video={project.video}
+                                    links={project.links}
+                                />
+                            </BlurFade>
+                        ))}
+                    </div>
+                )}
             </div>
         </section>
     );

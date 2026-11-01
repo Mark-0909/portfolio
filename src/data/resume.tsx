@@ -8,91 +8,110 @@ export const DATA = {
   location: "Cavite, Philippines",
   locationLink: "https://www.google.com/maps/place/Cavite,+Philippines",
   description:
-    "Computer Science graduate specializing in Software Development, Systems Reliability, and Workflow Automation. Building dependable applications, diagnosing complex system issues, and bridging technical development with operational support.",
+    "Software Engineer specializing in AI Systems, Backend APIs, and Workflow Automation. Building dependable data pipelines, full-stack applications, and automated business workflows.",
   headline:
-    "Computer Science graduate specializing in Software Development, Systems Reliability, and Workflow Automation.",
+    "Software Engineer specializing in AI Systems, Backend APIs, and Workflow Automation.",
   subheadline:
-    "Building dependable applications, diagnosing complex system issues, and bridging technical development with operational support.",
+    "Building dependable data pipelines, full-stack applications, and automated business workflows. Bridging practical software development with operational reliability.",
   summary:
-    "Computer Science graduate (BSCS) with practical experience spanning full-stack application development, automated workflow architecture, and enterprise technical support. Combines solid engineering fundamentals in object-oriented programming, relational databases, and API integration with hands-on diagnostic discipline and strict SLA compliance. Experienced in translating user requirements into scalable software and maintaining stable, secure operating environments across cross-functional teams.",
+    "Computer Science graduate with practical experience spanning software engineering, automated workflow architecture, and enterprise technical operations. Combines solid engineering fundamentals in object-oriented programming, relational schema design, and backend API integration with diagnostic discipline and strict SLA compliance. Experienced in translating complex requirements into reliable data pipelines, full-stack applications, and automated systems across cross-functional teams.",
   avatarUrl: "/mark.jpg",
   skills: [
     {
-      domain: "Software Engineering & Web Development",
+      domain: "Software Engineering & Full-Stack",
       categories: [
         {
           name: "Languages",
-          items: ["Python", "C#", "Java", "PHP", "JavaScript", "SQL"],
+          items: [
+            "Python",
+            "JavaScript",
+            "TypeScript",
+            "C#",
+            "Java",
+            "PHP",
+            "SQL",
+          ],
         },
         {
           name: "Frameworks & Libraries",
-          items: ["FastAPI", "React", "Vite", ".NET (WPF)", "CodeIgniter"],
+          items: [
+            "FastAPI",
+            "React",
+            "Next.js",
+            "Vite",
+            ".NET (WPF)",
+            "Spring Boot",
+            "CodeIgniter",
+            "TailwindCSS",
+          ],
         },
         {
-          name: "Databases & Architecture",
+          name: "Databases & Data",
           items: [
             "PostgreSQL",
             "MySQL",
             "SQLite",
+            "Supabase",
             "Relational Schema Design",
-            "Data Normalization",
           ],
         },
       ],
     },
     {
-      domain: "Systems, Automation & QA",
+      domain: "Automations, APIs & QA",
       categories: [
         {
-          name: "Automation & Integration",
+          name: "Automation & Scraping",
           items: [
-            "n8n Workflows",
+            "n8n",
             "Webhooks",
             "RESTful APIs",
-            "LLM API Pipelines (Claude/Gemini/OpenAI)",
+            "LLM APIs (Gemini/Claude/OpenAI)",
+            "Apify",
           ],
         },
         {
-          name: "Testing & Quality Assurance",
+          name: "Testing & Reliability",
           items: [
-            "API Inspection (Postman)",
+            "Postman (API Schemas)",
+            "Playwright (E2E)",
             "Defect Triage",
-            "Edge-Case Testing",
-            "Test Automation (Playwright)",
+            "Automated Regression Testing",
           ],
         },
         {
-          name: "Version Control & CI/CD",
-          items: ["Git", "GitHub", "GitHub Actions"],
+          name: "Tooling & CI/CD",
+          items: ["Git", "GitHub Actions", "Docker", "Linux CLI"],
         },
       ],
     },
     {
-      domain: "Enterprise IT & Infrastructure",
+      domain: "Enterprise Systems & Infrastructure",
       categories: [
         {
-          name: "Operating Systems & Directory",
+          name: "Systems & Access",
           items: [
+            "Active Directory (User Provisioning & RBAC)",
             "Windows 10/11",
-            "Active Directory (User Provisioning, RBAC basics)",
             "Azure Fundamentals",
           ],
         },
         {
-          name: "Networking & Diagnostics",
+          name: "Networking & CLI",
           items: [
             "TCP/IP",
             "DNS",
             "DHCP",
-            "CLI Diagnostics (ping, nslookup, tracert, ipconfig)",
+            "VPNs",
+            "Diagnostics (ping, traceroute, nslookup, ipconfig)",
           ],
         },
         {
-          name: "ITSM & Service Operations",
+          name: "Service Management",
           items: [
-            "Incident & Service Request Management",
-            "ITIL 4 Concepts",
-            "SLA Adherence",
+            "ITIL® 4 Framework",
+            "SLA Compliance",
+            "Incident & Service Request Lifecycle",
             "Technical SOP Documentation",
           ],
         },
@@ -135,8 +154,8 @@ export const DATA = {
       location: "Metro Manila, Philippines",
       title: "Software Engineering Intern",
       logoUrl: "sevenResources.png",
-      start: "2025",
-      end: "2025",
+      start: "August 2025",
+      end: "September 2025",
       description:
         "Participated in Agile sprint planning and feature implementation. Diagnosed and resolved frontend and API integration defects, wrote unit and regression test routines, and created structured documentation for software release cycles.",
     },
@@ -145,12 +164,12 @@ export const DATA = {
       href: "https://www.alorica.com",
       badges: ["Customer Operations"],
       location: "Metro Manila, Philippines",
-      title: "Customer Support Specialist",
+      title: "Customer Service Representative",
       logoUrl: "alorica.jpg",
-      start: "2022",
-      end: "2022",
+      start: "March 2022",
+      end: "July 2022",
       description:
-        "Delivered international client support and technical inquiry resolution. Managed clear issue escalation paths, maintained service-level benchmarks, and documented troubleshooting workflows across enterprise support software.",
+        "Delivered frontline enterprise support under strict SLA resolution targets. Executed identity verification SOPs to protect sensitive policyholder records, maintained accurate CRM ticket documentation, and handled systematic incident triage.",
     },
   ],
 
@@ -198,16 +217,16 @@ export const DATA = {
       href: "https://github.com/true-scope",
       dates: "2025 - 2026",
       active: true,
+      featured: true,
       category: "Web",
       description:
-        "Architected an end-to-end multi-source claim verification system and browser extension leveraging transformer-based NLP and NLI classification models. Features automated tool calling, bias detection, and structured prompt evaluation guardrails.",
+        "Architected an end-to-end multi-source claim verification system and browser extension leveraging transformer-based NLP and NLI classification models. Features automated tool calling, bias detection, and structured prompt evaluation guardrails.\n\n**Accolade:** Selected Presenter at CvSU Research Symposium & 3rd Place Best Presenter. Published systematic literature review.",
       technologies: [
         "Python",
         "PyTorch",
-        "Transformers / BERT / RoBERTa",
+        "Transformers (BERT/RoBERTa)",
         "FastAPI",
         "PostgreSQL",
-        "Javascript / TypeScript",
         "Vite",
         "Chrome Extension API",
       ],
@@ -222,44 +241,83 @@ export const DATA = {
       video: "",
     },
     {
-  title: "Autonomous AI Job Hunter",
-  href: "https://github.com/Mark-0909/ai-automated-job-hunter",
-  dates: "October 2026",
-  active: true,
-  category: "Automation",
-  description:
-    "An automated, dual-persona job recruitment pipeline built with n8n. Scrapes live job boards daily, analyzes postings against multiple resumes simultaneously using Google Gemini AI, and automatically categorizes them into a tracking database with custom rate-limit handling.",
-  technologies: [
-    "n8n",
-    "Apify",
-    "Google Gemini API",
-    "Google Workspace APIs",
-    "Docker",
-    "Automated Web Scraping"
-  ],
-  links: [
-    {
-      type: "Source",
-      href: "https://github.com/Mark-0909/ai-automated-job-hunter.git",
-      icon: <Icons.github className="size-3" />,
+      title: "Autonomous AI Job Hunter",
+      href: "https://github.com/Mark-0909/ai-automated-job-hunter",
+      dates: "October 2026",
+      active: true,
+      featured: true,
+      category: "Automation",
+      description:
+        "An automated, dual-persona job recruitment pipeline built with n8n. Scrapes live job boards daily, analyzes postings against multiple resumes simultaneously using Google Gemini AI, and automatically categorizes them into a tracking database with custom rate-limit handling.",
+      technologies: [
+        "n8n",
+        "Apify",
+        "Google Gemini API",
+        "Webhooks",
+        "Docker",
+        "Automated Scraping",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Mark-0909/ai-automated-job-hunter.git",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "jobtracker.png",
+      video: "",
     },
-  ],
-  image: "jobtracker.png",
-  video: "",
-},
+    {
+      title: "Inday Room Rental Management",
+      href: "https://github.com/Mark-0909/inday-rental-frontend",
+      dates: "2026",
+      active: true,
+      featured: true,
+      category: "Web",
+      description:
+        "A full-stack property management web application for landlords to administer room availability, track tenant leases, and automate dynamic utility and rent invoicing with payment proof verification.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Java (Spring Boot)",
+        "MySQL",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Frontend",
+          href: "https://github.com/Mark-0909/inday-rental-frontend",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Backend",
+          href: "https://github.com/Mark-0909/inday-rental-backend",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://inday-rental-frontend.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "Rental.png",
+      video: "",
+    },
     {
       title: "SmartPoultry IoT & Management System",
       href: "https://github.com/Mark-0909/SmartPoultry",
       dates: "2024",
       active: true,
+      featured: true,
       category: "Software",
       description:
-        "Engineered an automated poultry management platform connecting IoT sensor nodes with a central web dashboard. Built real-time monitoring graphs, automated environmental alerting, and structured MySQL inventory management.",
+        "Engineered an automated poultry management platform connecting IoT sensor nodes with a central web dashboard. Built real-time monitoring graphs, automated environmental alerting, and structured MySQL inventory management.\n\n**Note:** Commercially deployed and delivered to client.",
       technologies: [
         "C#",
         ".NET Framework",
-        "SQLite / MySQL",
-        "WPF (Windows Presentation Foundation)",
+        "WPF",
+        "SQLite/MySQL",
       ],
       links: [
         {
@@ -276,15 +334,15 @@ export const DATA = {
       href: "https://github.com/Mark-0909/doc_tracking",
       dates: "2025",
       active: true,
+      featured: true,
       category: "Web",
       description:
         "Architected a secure web-based document management platform for organizing, archiving, and retrieving digital records. Built role-based access control (RBAC), automated document tracking, and optimized SQL search queries.",
       technologies: [
-        "CodeIgniter / PHP",
-        "JavaScript",
+        "CodeIgniter (PHP)",
         "MySQL",
+        "Role-Based Access Control (RBAC)",
         "RESTful APIs",
-        "tailwindCSS",
       ],
       links: [
         {
@@ -297,53 +355,17 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Inday Room Rental Management",
-      href: "https://github.com/Mark-0909/inday-rental-frontend",
-      dates: "2026",
-      active: true,
-      category: "Web",
-      description:
-        "A modern, intuitive web interface for the Inday Rental management system allowing landlords to easily manage rooms, track tenants, and generate/monitor utility and rent bills. Features dynamic billing and image uploads for proofs. Built primarily through AI-assisted development.",
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "TailwindCSS",
-        "Java",
-        "Spring Boot",
-        "MySQL",
-      ],
-      links: [
-        {
-          type: "Frontend",
-          href: "https://github.com/Mark-0909/inday-rental-frontend",
-          icon: <Icons.github className="size-3" />,
-        },
-         {
-          type: "Backend",
-          href: "https://github.com/Mark-0909/inday-rental-backend",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Website",
-          href: "https://inday-rental-frontend.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "Rental.png",
-      video: "",
-    },
-    {
       title: "Type Wizard: Tower Defense",
       href: "https://github.com/Mark-0909/Type-Wizard-Tower-Defense",
       dates: "2024",
       active: true,
+      featured: false,
       category: "Game Dev",
       description:
         "Engineered an interactive typing-mechanic tower defense game. Built custom word-matching input systems, enemy pathfinding AI, wave progression controllers, and projectile combat interactions utilizing object-oriented programming patterns.",
       technologies: [
-        "Godot Engine",
-        "Godot Scripting Language (GDScript)",
+        "Godot",
+        "GDScript",
         "OOP Architecture",
         "Game Physics & AI",
         "State Machines",
@@ -364,72 +386,17 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Vectraze — Image to Pixel Art Rasterizer",
-      href: "https://github.com/Mark-0909/Vectraze",
-      dates: "2024",
-      active: true,
-      category: "Software",
-      description:
-        "Developed a Windows desktop application that converts standard images into customizable pixel art. Implemented dynamic canvas resizing, rasterization algorithms, a direct pixel-editing toolkit, background isolation, and image filter effects.",
-      technologies: [
-        "C#",
-        ".NET Framework",
-        "WPF (Windows Presentation Foundation)",
-        "Image Processing Algorithms",
-        "OOP Architecture",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Mark-0909/Vectraze",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "vectraze.png",
-      video: "",
-    },
-    {
-      title: "Interactive DFA Visualizer & Simulator",
-      href: "https://dfa-simulator67.netlify.app/",
-      dates: "2024",
-      active: true,
-      category: "Web",
-      description:
-        "Built an interactive web simulator for Deterministic Finite Automata (DFA). Features a dynamic node-and-edge canvas editor, state machine configuration, self-loop transitions, and step-by-step input string execution.",
-      technologies: [
-        "React",
-        "JavaScript",
-        "React Flow (@xyflow/react)",
-        "Automata Theory",
-        "React Router",
-        "CSS3",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://dfa-simulator67.netlify.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Mark-0909/dfa-simulator",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "dfa.png",
-      video: "",
-    },
-    {
       title: "Echo: Soul Saver",
       href: "https://github.com/Mark-0909/Echo-Soul-Saver",
       dates: "2024",
       active: true,
+      featured: false,
       category: "Game Dev",
       description:
         "Engineered a 2D rogue-like action-platformer featuring dynamic form-shifting mechanics between ghost and human states. Implemented life-draining transformation balance logic, monster combat AI, soul-gathering mechanics, and floor ascension progression.",
       technologies: [
-        "Godot Engine",
-        "Godot Scripting Language (GDScript)",
+        "Godot",
+        "GDScript",
         "2D Pixel Art & Animation",
         "Game Physics & Mechanics",
         "Rogue-like Systems",
@@ -447,6 +414,62 @@ export const DATA = {
         },
       ],
       image: "echo.png",
+      video: "",
+    },
+    {
+      title: "Vectraze — Image to Pixel Art Rasterizer",
+      href: "https://github.com/Mark-0909/Vectraze",
+      dates: "2024",
+      active: true,
+      featured: false,
+      category: "Software",
+      description:
+        "Developed a Windows desktop application that converts standard images into customizable pixel art. Implemented dynamic canvas resizing, rasterization algorithms, a direct pixel-editing toolkit, background isolation, and image filter effects.",
+      technologies: [
+        "C#",
+        ".NET",
+        "WPF",
+        "Image Processing Algorithms",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Mark-0909/Vectraze",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "vectraze.png",
+      video: "",
+    },
+    {
+      title: "Interactive DFA Visualizer & Simulator",
+      href: "https://dfa-simulator67.netlify.app/",
+      dates: "2024",
+      active: true,
+      featured: false,
+      category: "Web",
+      description:
+        "Built an interactive web simulator for Deterministic Finite Automata (DFA). Features a dynamic node-and-edge canvas editor, state machine configuration, self-loop transitions, and step-by-step input string execution.",
+      technologies: [
+        "React",
+        "React Flow",
+        "JavaScript",
+        "Automata Theory",
+        "CSS3",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://dfa-simulator67.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Mark-0909/dfa-simulator",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "dfa.png",
       video: "",
     },
   ],

@@ -36,15 +36,22 @@ import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import {
   SiCodeigniter,
+  SiDocker,
   SiDotnet,
   SiFastapi,
   SiGit,
   SiGithubactions,
+  SiJavascript,
+  SiLinux,
   SiMysql,
   SiN8N,
+  SiNextdotjs,
   SiPhp,
   SiPostman,
+  SiSpringboot,
   SiSqlite,
+  SiSupabase,
+  SiTailwindcss,
   SiVite,
 } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
@@ -81,6 +88,8 @@ function SkillLogo({ skill }: { skill: string }) {
     case "Java":
       return <Java className={baseClass} />;
     case "JavaScript":
+      return <SiJavascript className={baseClass} color="#F7DF1E" />;
+    case "TypeScript":
       return <Typescript className={baseClass} />;
     case "PHP":
       return <SiPhp className={baseClass} color="#777BB3" />;
@@ -90,19 +99,27 @@ function SkillLogo({ skill }: { skill: string }) {
       return <SiFastapi className={baseClass} color="#009485" />;
     case "React":
       return <ReactLight className={baseClass} />;
+    case "Next.js":
+      return <SiNextdotjs className={baseClass} />;
     case "Vite":
       return <SiVite className={baseClass} color="#646CFF" />;
     case ".NET":
     case ".NET (WPF)":
       return <SiDotnet className={baseClass} color="#512BD4" />;
+    case "Spring Boot":
+      return <SiSpringboot className={baseClass} color="#6DB33F" />;
     case "CodeIgniter":
       return <SiCodeigniter className={baseClass} color="#EE4323" />;
+    case "TailwindCSS":
+      return <SiTailwindcss className={baseClass} color="#06B6D4" />;
     case "PostgreSQL":
       return <Postgresql className={baseClass} />;
     case "MySQL":
       return <SiMysql className={baseClass} color="#4479A1" />;
     case "SQLite":
       return <SiSqlite className={baseClass} color="#003B57" />;
+    case "Supabase":
+      return <SiSupabase className={baseClass} color="#3ECF8E" />;
     case "Relational Schema Design":
       return <Database className={cn(baseClass, "text-indigo-400")} />;
     case "Data Normalization":
@@ -114,17 +131,23 @@ function SkillLogo({ skill }: { skill: string }) {
       return <Workflow className={cn(baseClass, "text-amber-500")} />;
     case "RESTful APIs":
       return <Globe className={cn(baseClass, "text-sky-400")} />;
+    case "LLM APIs (Gemini/Claude/OpenAI)":
     case "LLM API Pipelines (Claude/Gemini/OpenAI)":
       return <Sparkles className={cn(baseClass, "text-purple-400")} />;
+    case "Apify":
+      return <Globe className={cn(baseClass, "text-orange-500")} />;
+    case "Postman (API Schemas)":
     case "API Inspection (Postman)":
     case "Postman":
       return <SiPostman className={baseClass} color="#FF6C37" />;
-    case "Defect Triage":
-      return <Bug className={cn(baseClass, "text-rose-400")} />;
-    case "Edge-Case Testing":
-      return <Activity className={cn(baseClass, "text-teal-400")} />;
+    case "Playwright (E2E)":
     case "Test Automation (Playwright)":
       return <CheckCircle2 className={cn(baseClass, "text-emerald-500")} />;
+    case "Defect Triage":
+      return <Bug className={cn(baseClass, "text-rose-400")} />;
+    case "Automated Regression Testing":
+    case "Edge-Case Testing":
+      return <Activity className={cn(baseClass, "text-teal-400")} />;
     case "Git":
       return <SiGit className={baseClass} color="#F05032" />;
     case "GitHub":
@@ -132,8 +155,13 @@ function SkillLogo({ skill }: { skill: string }) {
     case "GitHub Actions":
     case "GitHub Actions (CI/CD)":
       return <SiGithubactions className={baseClass} color="#2088FF" />;
+    case "Docker":
+      return <SiDocker className={baseClass} color="#2496ED" />;
+    case "Linux CLI":
+      return <SiLinux className={baseClass} />;
     case "Windows 10/11":
       return <FaWindows className={baseClass} color="#0078D6" />;
+    case "Active Directory (User Provisioning & RBAC)":
     case "Active Directory (User Provisioning, RBAC basics)":
       return <Users className={cn(baseClass, "text-blue-500")} />;
     case "Azure Fundamentals":
@@ -143,12 +171,18 @@ function SkillLogo({ skill }: { skill: string }) {
     case "DNS":
     case "DHCP":
       return <Server className={cn(baseClass, "text-indigo-400")} />;
+    case "VPNs":
+      return <ShieldCheck className={cn(baseClass, "text-teal-400")} />;
+    case "Diagnostics (ping, traceroute, nslookup, ipconfig)":
     case "CLI Diagnostics (ping, nslookup, tracert, ipconfig)":
       return <Terminal className={cn(baseClass, "text-emerald-400")} />;
+    case "Incident & Service Request Lifecycle":
     case "Incident & Service Request Management":
       return <ShieldCheck className={cn(baseClass, "text-amber-400")} />;
+    case "ITIL® 4 Framework":
     case "ITIL 4 Concepts":
       return <Workflow className={cn(baseClass, "text-cyan-400")} />;
+    case "SLA Compliance":
     case "SLA Adherence":
       return <Clock className={cn(baseClass, "text-orange-400")} />;
     case "Technical SOP Documentation":
@@ -169,7 +203,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                text="Hi, I'm Mark"
               />
               <BlurFadeText
                 className="text-foreground/90 font-medium max-w-150 md:text-lg lg:text-xl leading-snug"
@@ -333,7 +367,8 @@ export default function Page() {
                     {skillDomain.domain.includes("Software") && (
                       <Code2 className="size-4.5 text-blue-500 shrink-0" />
                     )}
-                    {skillDomain.domain.includes("Systems") && (
+                    {(skillDomain.domain.includes("Automations") ||
+                      skillDomain.domain.includes("Systems")) && (
                       <Workflow className="size-4.5 text-purple-500 shrink-0" />
                     )}
                     {skillDomain.domain.includes("Enterprise") && (
