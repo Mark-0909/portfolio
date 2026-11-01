@@ -194,6 +194,14 @@ export const DATA = {
 
   certifications: [
     {
+      title: "Python Essentials 1",
+      issuer: "Cisco Networking Academy",
+      href: "https://drive.google.com/file/d/1jxZfrPklD-NQg6ln4MKIe7-SUGdyWzId/view?usp=sharing",
+      logoUrl: "/cisco.svg",
+      start: "2026",
+      end: "2026",
+    },
+    {
       title: "Introduction to Cybersecurity",
       issuer: "Cisco Networking Academy",
       href: "https://drive.google.com/file/d/1pLGlDr1uSOvNUBa1hnyKO1JKDJ-9_cei/view?usp=sharing",
