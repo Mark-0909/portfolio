@@ -12,15 +12,18 @@ import WorkSection from "@/components/section/work-section";
 import {
   Activity,
   ArrowUpRight,
+  Brain,
   Bug,
   CheckCircle2,
   Clock,
   Code2,
   Database,
   FileText,
+  Gauge,
   Globe,
   Network,
   Server,
+  ShieldAlert,
   ShieldCheck,
   Sparkles,
   Terminal,
@@ -134,6 +137,12 @@ function SkillLogo({ skill }: { skill: string }) {
     case "LLM APIs (Gemini/Claude/OpenAI)":
     case "LLM API Pipelines (Claude/Gemini/OpenAI)":
       return <Sparkles className={cn(baseClass, "text-purple-400")} />;
+    case "LLM Prompt Engineering":
+      return <Sparkles className={cn(baseClass, "text-violet-400")} />;
+    case "RLHF / RLAIF Evaluation":
+      return <Brain className={cn(baseClass, "text-purple-400")} />;
+    case "Model Benchmarking":
+      return <Gauge className={cn(baseClass, "text-amber-400")} />;
     case "Apify":
       return <Globe className={cn(baseClass, "text-orange-500")} />;
     case "Postman (API Schemas)":
@@ -143,9 +152,12 @@ function SkillLogo({ skill }: { skill: string }) {
     case "Playwright (E2E)":
     case "Test Automation (Playwright)":
       return <CheckCircle2 className={cn(baseClass, "text-emerald-500")} />;
+    case "Adversarial Testing":
+      return <ShieldAlert className={cn(baseClass, "text-rose-400")} />;
     case "Defect Triage":
       return <Bug className={cn(baseClass, "text-rose-400")} />;
     case "Automated Regression Testing":
+    case "Edge-Case Analysis":
     case "Edge-Case Testing":
       return <Activity className={cn(baseClass, "text-teal-400")} />;
     case "Git":

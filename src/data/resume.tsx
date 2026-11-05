@@ -61,22 +61,27 @@ export const DATA = {
       domain: "Automations, APIs & QA",
       categories: [
         {
-          name: "Automation & Scraping",
+          name: "AI & Automation",
           items: [
+            "RLHF / RLAIF Evaluation",
+            "Model Benchmarking",
+            "LLM Prompt Engineering",
+            "LLM APIs (Gemini/Claude/OpenAI)",
             "n8n",
             "Webhooks",
             "RESTful APIs",
-            "LLM APIs (Gemini/Claude/OpenAI)",
             "Apify",
           ],
         },
         {
-          name: "Testing & Reliability",
+          name: "Testing & QA",
           items: [
             "Postman (API Schemas)",
             "Playwright (E2E)",
-            "Defect Triage",
+            "Adversarial Testing",
             "Automated Regression Testing",
+            "Edge-Case Analysis",
+            "Defect Triage",
           ],
         },
         {
@@ -147,6 +152,18 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "Outlier AI",
+      href: "https://outlier.ai",
+      badges: ["Contract"],
+      location: "Remote",
+      title: "AI & Speech-to-Speech (S2S) Systems Evaluator (Contractor)",
+      logoUrl: "outlier.svg",
+      start: "October 2026",
+      end: "Present",
+      description:
+        "Execute pairwise RLHF evaluations and adversarial benchmarking on frontier multimodal and real-time speech-to-speech models. Audit conversational dynamics, instruction fidelity, tool-call leakage, and latency boundaries to inform reward modeling.",
+    },
     {
       company: "Seven Resources Inc.",
       href: "#",
